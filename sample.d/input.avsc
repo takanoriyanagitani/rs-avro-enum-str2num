@@ -1,0 +1,20 @@
+{
+	"type":"record",
+	"name":"sample_rec",
+	"fields":[
+		{"name":"name", "type":"string"},
+		{"name":"height", "type":"double"},
+		{"name":"active", "type":"boolean"},
+		{"name":"created", "type":"string"},
+		{"name":"status", "type":{
+			"type":"enum",
+			"name":"Status",
+			"symbols": [
+			  "unspecified",
+			  "ok",
+			  "ng"
+			]
+		}},
+		{"name":"updated", "type":["null","string"]}
+	]
+}
